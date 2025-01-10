@@ -69,7 +69,7 @@ function generar_vista($tabla, $campos, $directorio, $es_vista) {
     // Tabla
     $contenido .= "        <table class=\"table table-striped table-sm mt-3\">\n";
     $contenido .= "            <thead>\n";
-    $contenido .= "                <tr>\n";
+    $contenido .= "                <tr class=\"sticky-top\" style=\"background:#fff;\" >\n";
 
     // Encabezados de la tabla
     foreach ($campos as $campo) {
