@@ -96,6 +96,9 @@ function generar_controlador($tabla, $campos, $directorio, $archivo_conexion, $e
     $contenido .= "    }\n\n"; // fin funcion exportar
 
     $contenido .= "    private function exportarExcel(\$datos) {\n";
+    $contenido .= "        echo \"<head>\\n\";\n";        
+    $contenido .= "        echo \"<meta charset=\"UTF-8\">\\n\";\n";
+    $contenido .= "        echo \"</head>\\n\";\n";
     $contenido .= "        echo \"<table border='1'>\\n\";\n";
     $contenido .= "        if (!empty(\$datos)) {\n";
     $contenido .= "            echo \"<tr>\\n\";\n";
